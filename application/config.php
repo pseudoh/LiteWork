@@ -46,7 +46,7 @@
 	** prevent the need to include common libraries across all pages
 	*/
 	$autoload_libraries = array(
-		'authentication',
+		
 	);
 	define('AUTOLOAD_LIBRARIES', serialize($autoload_libraries));
 
