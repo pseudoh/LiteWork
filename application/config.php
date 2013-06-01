@@ -9,7 +9,7 @@
 	/*
 	** Application Configurations  
 	*/
-	define('APP_URL' , 'http://192.168.0.5:8888/aston/cs2410/www'); //The URL to the application
+	define('APP_URL' , ''); //The URL to the application
 	define('RESOURCES_URL', APP_URL.'/resources'); //The URL to resources
 	define('RESOURCES_PATH', SYSTEM_ROOT.'/resources'); //The system path to resources
 	define('INDEX_PAGE' , ''); //The request handler page. Leave blank if using mod_rewrite in .htaccess
@@ -24,9 +24,9 @@
 	*/
 	define('DB_HOST', 'localhost');
 	define('DB_PORT', 3306);
-	define('DB_USER', 'root');
-	define('DB_PASS', 'root');
-	define('DB_DATABASE', 'astonclubnews');
+	define('DB_USER', '');
+	define('DB_PASS', '');
+	define('DB_DATABASE', '');
 	define('DB_AUTOLOAD', TRUE); //Set to TRUE to automatically load the database library
 
 	/*
@@ -36,12 +36,6 @@
 	*/
 	$routes = array(
 		'' => 'home', //Default controllers
-		'login' => 'auth/login',
-		'logout' => 'auth/logout',
-		'register' => 'auth/register',
-		'resetpass' => 'auth/resetpass',
-		'myastonnews/events.json' => 'myastonnews/get_events_json',
-		'404' => 'errors/error_404' //routes 404 error to a view
 	);
 
 	define('ROUTES', serialize($routes)); //Serialise the routes array and define as constant

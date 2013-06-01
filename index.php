@@ -9,7 +9,7 @@
 	date_default_timezone_set('Europe/London');
 
 	//Setup main system configurations
-	define('SYSTEM_ROOT' , '/Users/pseudoh/Dev/web/aston/cs2410/www'); //Path to the website on disk
+	define('SYSTEM_ROOT' , __DIR__); //Path to the website on disk
 	define('SYSTEM_PATH' , SYSTEM_ROOT.'/system'); //Path to the system's directory
 	define('APP_PATH' , SYSTEM_ROOT.'/application'); //Path to the application's directory
 	define('MODELS_PATH' , APP_PATH.'/models'); //Path to the application model's directory
